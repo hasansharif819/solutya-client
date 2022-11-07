@@ -11,6 +11,7 @@ import Users from './components/Dashbord/Users/Users';
 import AddProducts from './components/Dashbord/AddProducts/AddProducts';
 import Manages from './components/Dashbord/Manages/Manages';
 import RequireAuth from './components/Login/RequireAuth/RequireAuth';
+import AddUser from './components/Dashbord/AddUser/AddUser';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         <Route path="/dashboard/addProduct" element={<AddProducts></AddProducts>}></Route>
         <Route path="/dashboard/manages" element={
           <RequireAuth><Manages></Manages></RequireAuth>
+        }></Route>
+        <Route path="/dashboard/addUser" element={
+          <RequireAuth><AddUser></AddUser></RequireAuth>
         }></Route>
       </Routes>
       <ToastContainer />

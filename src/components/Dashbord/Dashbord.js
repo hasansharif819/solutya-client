@@ -25,6 +25,9 @@ const Dashbord = () => {
                         { admin | editor && <>
                         <li><Link to="/dashboard/manages">MANAGE</Link></li>
                     </>}
+                        { admin && <>
+                        <li><Link to="/dashboard/addUser">CREATE USER</Link></li>
+                    </>}
                 </ul>
 
             </div>
