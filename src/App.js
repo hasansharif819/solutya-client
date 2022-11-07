@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Login from './components/Login/Login/Login';
 
 function App() {
   return (
     <div className="App">
-      <h1>Solutya</h1>
+      <Routes>
+        <Route path='/login' element={<Login />}></Route>
+      </Routes>
     </div>
   );
 }
