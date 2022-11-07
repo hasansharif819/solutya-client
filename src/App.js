@@ -12,7 +12,6 @@ import AddProducts from './components/Dashbord/AddProducts/AddProducts';
 import Manages from './components/Dashbord/Manages/Manages';
 import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 
-
 function App() {
   return (
     <div className="App">
